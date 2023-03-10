@@ -8,33 +8,42 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.List;
 
 public class radioButtons {
-    public static void main(String[] args) throws InterruptedException {
-
+        public static void main(String[] args) {
 
 //        tell your project where the webdriver is located.
+//        for mac user please do not use .exe with chromedriver
+            System.setProperty("webdriver.chrome.driver", "Drivers/chromedriver.exe");
 
-        System.setProperty("webdriver.chrome.driver", "Drivers/chromedriver.exe");
+//        create an instance of WebDriver
+            WebDriver driver = new ChromeDriver();
+//        max the window
+            driver.manage().window().maximize();
 
-        //        create an instance of WebDriver
-        WebDriver driver = new ChromeDriver();
+//        goto syntaxprojects.com
+            driver.get("http://practice.syntaxtechs.net/basic-radiobutton-demo.php");
 
-        driver.manage().window().maximize();
+//        click on the radio button Male
+            WebElement maleBtn = driver.findElement(By.cssSelector("input[value='Male']"));
+//        check if the radio button is enabled
+            boolean isEnabledMale = maleBtn.isEnabled();
+            System.out.println("the radio button male is enabled " + isEnabledMale);
 
-        driver.get("http://practice.syntaxtechs.net/basic-radiobutton-demo.php");
+//        check if the radio button is Displayed
+            boolean isDisplayedMale = maleBtn.isDisplayed();
+            System.out.println("the radio button male is displayed" + isDisplayedMale);
 
-        //find all the age group radio buttons
-        //the xpath here is common to all the WebElements that have age group
-        List<WebElement> radioBtns=driver.findElements(By.xpath("//input[@name='ageGroup']"));
-    //iterate over the list to see the disered one
-        for(WebElement radioBtn: radioBtns) {
-
-            String age= radioBtn.getAttribute("value");
-            //if the value of the WebElement is 5-10 click on it
-
-            if(age.equalsIgnoreCase("0 - 5")){
-                radioBtns.click();
+//        check if the radio button is Selected
+            boolean isSelectedmale = maleBtn.isSelected();
+            System.out.println("the male button is selected " + isSelectedmale);
+// if the radio button is not selected click on it
+            if (!isSelectedmale) {
+                maleBtn.click();
             }
-        }
+//        check if the radio button is selected after the click
+            isSelectedmale = maleBtn.isSelected();
+            System.out.println("the status of selection is " + isSelectedmale);
 
+
+        }
     }
-    }
+

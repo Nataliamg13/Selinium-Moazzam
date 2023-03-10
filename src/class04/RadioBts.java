@@ -47,10 +47,5 @@ public class RadioBts {
         isSelectedmale=maleBtb.isSelected();
         System.out.println("the status of selection is "+isSelectedmale);
 
-
-
-
-
-
     }
 }
