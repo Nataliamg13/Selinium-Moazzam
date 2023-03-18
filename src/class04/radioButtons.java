@@ -43,6 +43,7 @@ public class radioButtons {
             isSelectedmale = maleBtn.isSelected();
             System.out.println("the status of selection is " + isSelectedmale);
 
+            driver.close();
 
         }
     }

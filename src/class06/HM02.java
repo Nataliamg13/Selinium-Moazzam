@@ -40,6 +40,7 @@ HW2
         driver.manage().timeouts().implicitlyWait(700, TimeUnit.SECONDS);
         //Switch back to the main page
         driver.switchTo().frame(0);
+        driver.close();
     }
     }
 

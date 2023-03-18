@@ -29,7 +29,7 @@ public class implicitWait {
 //send your firstname
         driver.findElement(By.name("firstname")).sendKeys("abracadabra");
 
-
+driver.close();
 
     }
     }

@@ -46,6 +46,7 @@ public class CheckBoxes {
 //                if no continue to iterate
             if (value.equalsIgnoreCase("Option-2")) {
                 checkBoxes.get(i).click();
+                driver.close();
             }
 
         }

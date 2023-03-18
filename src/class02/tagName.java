@@ -1,4 +1,4 @@
-package class2;
+package class02;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -21,7 +21,7 @@ public class tagName {
         driver.findElements(By.tagName("a"));
 
 //        to be continued in the next class.
-
+driver.quit();
     }
 }
 

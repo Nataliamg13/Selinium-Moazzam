@@ -37,5 +37,7 @@ public class XpathDemo {
         WebElement usernameText=driver.findElement(By.xpath("//label[text()='Username:']"));
         usernameText.getText();
 
+
+        driver.quit();
     }
 }

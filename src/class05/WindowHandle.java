@@ -49,6 +49,7 @@ public class WindowHandle {
 
 
             driver.switchTo().window(parentWindowHandle);
+            driver.close();
         }
     }
 

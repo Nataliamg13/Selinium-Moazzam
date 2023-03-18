@@ -37,6 +37,7 @@ public class DropDown {
 //            select by visible text
         sel.selectByVisibleText("Friday");
         Thread.sleep(2000);
+        driver.close();
 
     }
 }

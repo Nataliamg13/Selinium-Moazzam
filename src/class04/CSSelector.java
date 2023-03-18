@@ -31,5 +31,6 @@ public class CSSelector {
 
         firstName.sendKeys("abracadabra");
 
+        driver.quit();
     }
 }

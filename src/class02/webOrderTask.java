@@ -1,4 +1,4 @@
-package class2;
+package class02;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -24,6 +24,6 @@ public class webOrderTask {
 //        click on the login button
         driver.findElement(By.className("button")).click();
 
-
+       driver.quit();
     }
 }

@@ -37,6 +37,6 @@ public class MultiDropDown {
         sel.deselectByVisibleText("Ohio");
         //System.out.println();
 
-
+driver.close();
     }
 }

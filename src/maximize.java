@@ -15,6 +15,6 @@ public class maximize {
            //full screen
         driver.manage().window().fullscreen();
 
-
+driver.close();
     }
 }

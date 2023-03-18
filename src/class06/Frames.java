@@ -46,6 +46,7 @@ public class Frames {
 
         WebElement frame1=driver.findElement(By.xpath(""));
         driver.switchTo();
+        driver.close();
 }}
 
 

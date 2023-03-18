@@ -1,4 +1,4 @@
-package class2;
+package class02;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -27,6 +27,6 @@ public class locatingElements {
 //        click on forgotten password
         driver.findElement(By.partialLinkText("password?")).click();
 
-       // driver.quit();
+        driver.quit();
     }
 }

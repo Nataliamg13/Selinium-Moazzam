@@ -30,6 +30,7 @@ public class Alerts {
       alert.sendKeys("abracadabra");
 
       alert.accept();
+      driver.close();
 
     }
 }
